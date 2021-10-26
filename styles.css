@@ -158,6 +158,11 @@
     object-fit: contain;
   }
 
+  .card:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+
   #cardText {
     color: #111827;
     font-family: 'Roboto Slab';
