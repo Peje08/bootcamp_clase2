@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+  }
+  
+  *::selection {
+    background: #F09A00;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: 'Montserrat';
+  }
+
+  main {
+    padding-top: 80px;
+    flex: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    color: #111827;
+    font-family: 'Roboto Slab';
+  
+  }
+  
+  h1 {
+    font-size: 12rem;
+    color: rgb(238, 123, 123);
+    font-family: 'Roboto Slab';
+    
+    
+  }
+  
+  h3 {
+    color: white;
+  }
+  
+  footer {
+    padding: 20px;
+  }
+  
+  .hero {
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    background-color: #330033;
+    background-image: url("https://fondosmil.com/fondo/27737.jpg");
+    background-size: cover;
+  }
+  
+  .hero-content {
+    margin-right: 5rem;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(-50);
+    }
+  
+    to {
+      transform: translateY(50px);
+    }
+  }
+  
+  .hero-image {
+    border-radius: 20px;
+    border: #111827 2px solid;
+    animation: 1.5s infinite alternate bounce;
+    max-width: 100%;
+  }
+  
+  .button {
+    min-width: 30px;
+    max-width: 200px;
+    font-family: 'Roboto Slab';
+    color: white;
+    background-color: #991B1B; 
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    border: #111827 2px solid;
+    font-size: 20px;
+  }
+
+  @keyframes shake {
+    from {
+      transform: translateX(-5px);
+    }
+  
+    5% {
+      transform: translateX(5px);
+    }
+  
+    10% {
+      transform: translateX(-5px);
+    }
+  
+    15% {
+      transform: translateX(5px);
+    }
+  
+    to {
+      transform: translateX(5px);
+    }
+  }
+  
+  .buy-button {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    animation: 3s infinite alternate shake;
+  }
+  
+  .catalogue-container {
+    background-color: rgb(211, 195, 195);
+    background-image: url(https://freedesignfile.com/upload/2018/06/Cooking-recipes-background-and-jar-full-of-honey-on-white-04.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 10rem;
+  }
+  
+  .catalogue-title {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    background: darkblue;
+    border-radius: 15px;
+    text-align:center
+  }
+  
+  .catalogue-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border: #E5E7EB 2px solid;
+    border-radius: 10px;
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    margin: 1rem;
+    background-color: rgb(206, 189, 168);
+  }
+  
+  .card img {
+    object-fit: contain;
+  }
+
+  #cardText {
+    color: #111827;
+    font-family: 'Roboto Slab';
+    text-align: center;
+  }
+
+  #cardPrice {
+    text-align: end;
+  }
+
+  footer {
+    text-align: right;
+  }
